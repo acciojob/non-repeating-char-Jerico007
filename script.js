@@ -1,6 +1,12 @@
 //your JS code here. If required.
   let a = prompt("Enter a string");
 
+   let arr = [...a];
+
+	arr.sort();
+
+  a = arr.join();
+
       let ans = function NonReapeating(val) {
         let finalAns = val.charAt(0);
         let index = 1;

@@ -1,22 +1,32 @@
 //your JS code here. If required.
- let a = prompt("Enter a string");
-      
+  let a = prompt("Enter a string");
+
       let ans = function NonReapeating(val) {
         let finalAns = val.charAt(0);
-        for (let index = 0; index < val.length-1; index++ ) {
+        let index = 1;
+         while(index < val.length) {
           let j = index+1;
+          let cnt = 1;
           while(j < val.length)
           {
             if(val.charAt(j) === val.charAt(index))
             {
-              j++;
+               cnt++;
+               j++;
             }
             else{
-              finalAns = val.charAt(index);
-              index = j;
               break;
             }
           }
+
+          if(cnt === 1)
+          {
+              finalAns = val.charAt(index);
+              index = j;
+          }
+          else{
+            index = j;
+          } 
         }
         return finalAns;
       };

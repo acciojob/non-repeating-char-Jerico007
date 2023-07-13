@@ -1,6 +1,7 @@
 //your JS code here. If required.
   let a = prompt("Enter a string");
 
+		
 
   let arr = a.split("");
 
@@ -10,7 +11,12 @@
       console.log(a);
 
       let ans = function NonReapeating(val) {
-        let finalAns = val.charAt(0);
+
+		  if(a === undefined || a === null)
+		{
+			return null;
+		}
+        let finalAns = null;
         
         let index = 0;
         while (index < val.length) {

@@ -1,5 +1,5 @@
 //your JS code here. If required.
-  let a = prompt("Enter a string");
+  // let a = prompt("Enter a string");
 
    let arr = [...a];
 
@@ -27,8 +27,8 @@
 
           if(cnt === 1)
           {
-              finalAns = val.charAt(index);
-              index = j;
+            finalAns = val.charAt(index);
+			  break;
           }
           else{
             index = j;
@@ -37,4 +37,4 @@
         return finalAns;
       };
 
-     alert(ans(a));
+     // alert(ans(a));
